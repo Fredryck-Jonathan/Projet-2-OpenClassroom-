@@ -310,6 +310,225 @@ color: grey;
 
 }
 
+/* test hebergement et pop */
+
+#deuxiemesec
+{
+
+display: flex;
+flex-direction: row;
+}
+
+#hebergementmars
+{
+
+background-color: #F2F2F2 ;
+border: 1px solid rgba(0, 0, 0, 0.0);
+border-radius: 30px;
+padding: 0px 0px 0px 0px ;
+}
+
+#titreheber
+{
+	font-size: 17px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+
+#hebermarscard
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.card {
+  width: 300px; /*1*/
+  height: 200px;
+  margin: 20px 5px 20px 50px ; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+
+}
+.card a { /*5*/
+  color: #333; 
+  text-decoration: none;
+ 
+}
+
+
+.card-image {
+  height: 100px;
+  position: relative;
+  overflow: hidden;  
+  padding: 10px 10px 10px 10px ;
+  border: 15px solid white;
+  border-radius: 30px ;
+
+
+}
+.card-image img {
+  width: 150%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 10px 10px 10px 0px;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid white;
+  border-radius: 10px ;
+
+}
+
+.card-date
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	bottom: 50px;
+
+}
+
+.card-title
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+		position: relative;
+	bottom: 70px;
+
+}
+
+.card-excerpt
+{
+
+	position: relative;
+	bottom: 75px;
+
+}
+
+
+.card-date, .card-title , .card-excerpt{
+  text-align:left ;
+ 
+
+}
+
+.card-body {
+   text-align:center;  
+  padding: 20px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* test POP */
+
+#pop
+{
+
+background-color: #F2F2F2 ;
+border: 1px solid rgba(0, 0, 0, 0.0);
+border-radius: 30px;
+padding: 0px 0px 0px 0px ;
+
+}
+
+#titrepop
+{
+
+	font-size: 17px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+
+}
+
+.cardpop {
+  width: 400px; /*1*/
+  height: 310px;
+  margin: 20px 5px 0px 50px ; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+}
+.cardpop a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+
+
+.cardpop-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;  
+
+  border: 15px solid white;
+  border-radius: 30px ;
+
+}
+.cardpop-image img {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 10px 10px 10px 0px;
+  padding: 30px 10px 10px 10px;
+  border: 10px solid white;
+  border-radius: 10px ;
+}
+
+.cardpop-date
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	bottom: 66px;
+
+}
+
+.cardpop-title
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+		position: relative;
+	bottom: 85px;
+
+}
+
+.cardpop-excerpt
+{
+
+	position: relative;
+	bottom: 80px;
+
+}
+
+
+.cardpop-date, .cardpop-title , .cardpop-excerpt{
+  text-align:left ;
+  font-weight: bold;
+
+}
+
+.cardpop-body {
+   text-align:center;  
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+
+
+
 
 
 }
@@ -802,8 +1021,7 @@ color: black;
 
 #hebergementmars
 {
-	color: white;
-	background-color:black ;
+
 
 }
 
@@ -814,6 +1032,60 @@ color: black;
 	background-color: white;
 
 }
+
+
+/* test */
+
+
+.card {
+  width: 400px; /*1*/
+  margin: 0px auto; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+}
+.card a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+.card:hover .card-image img { /*6*/
+  width: 160%;
+  filter: grayscale(0);
+}
+
+
+.card-image {
+  height: 250px;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+}
+.card-image img {
+  width: 150%;/*4*/
+    /*5 - Méthode de centrage en fonction de la taille de l'image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);/*6*/
+    /*7 - Transition */
+  transition-property: filter width; 
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.card-date, .card-title {
+  text-align:center;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+
+.card-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+
+
 
 
 
