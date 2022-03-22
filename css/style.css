@@ -1,8 +1,830 @@
-@font_family{
+/* initialisation de la police d'écriture par défaut */
+
+@font-face{
+	font-family: 'Raleway' ;
+	src: url(Raleway-VariableFont_wght.ttf),
+		 url(Raleway-Italic-VariableFont_wght.ttf);
+
+}
+
+/*Application de la police sur toute la page */
+
+* {
+
+	font-family: 'Raleway', Arial, serif;
+}
+
+
+/* application du box sizing */
+
+* {
+
+	box-sizing: content-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section pour les écran supérieur a 992 */
+
+@media screen and (min-width: 992px){
+
+
+
+/* réalisation de l'header version desktop */
+
+header 
+{
+
+display: flex;
+justify-content: space-between;
+
+
+}
+
+header ul
+
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#Logo
+{
+
+	padding-left: 30px;
+	padding-top: 10px;
+
+}
+
+
+header ul li
+{
+	text-decoration-style: none;
+	margin: 30px 80px 30px 40px;
+
+}
+
+header ul li a 
+
+{
+
+	text-decoration: none;
+	padding-top: 51px;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header ul li a:hover
+
+{
+
+border-top: solid blue ;
+color: blue;
+
+}
+
+/* réalisation du navigateur de recherche */
+
+section h1
+{
+
+ font-size: 26px;
+ font-weight: bold;
+}
+
+
+section h2
+
+{
+
+font-size: 20px;
+color: grey;
+}
+
+
+
+#logolocation
+{
+	
+	position: relative;
+	background-color: #F2F2F2;
+	border: 3px rgba(0, 0, 0, 1.0) ;
+	border-radius: 10px;
+	padding: 10px 20px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	z-index: 20;
+	left: 10px;
+
+
+}
+
+#zonerecherche
+{
+
+position: relative;
+left: 20px;
+
+}
+
+#premiersec
+{
+
+	position: relative;
+	left: 40px;
+
+}
+
+
+
+
+#rechercherbleu
+{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	background-color: #0065FC;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	padding: 10px 10px 10px 20px;
+	right: 25px;
+	z-index: 20;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+#rechercherbleu:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: #0075Fb;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	z-index: 20;
+	font-weight: bold;
+}
+
+
+section form input
+{
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	padding: 12px 15px 10px 10px;
+	border: rgba(0, 0, 0, 0.0);
+	z-index: 100;
+	visibility: visible;
+	font-weight: bold;
+
+}
+
+#loupe
+{
+visibility: hidden;
+
+}
+
+/*Nous allons réaliser l'espace filtre */
+
+
+#espacefiltre
+{
+position: relative;
+left: 40px;
+display: flex;
+flex-direction: row;	
+
+}
+
+#listfiltre
+{
+
+display: flex;
+flex-direction: row;
+text-decoration: none;
+list-style-type: none;
+}
+
+#listfiltre ul
+{
+
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
+#listfiltre li
+{
+
+text-decoration: none;
+background-color: white;
+border: 1px solid rgba(242, 242, 242, 1.0);
+border-radius: 50px;
+padding: 0px 15px 0px 0px;
+margin: 0px 15px 0px 15px;
+
+}
+
+
+#économie, #Familial, #romantique, #Animaux
+{
+
+background-color: #DEEBFF;
+color: #0065FC;
+border: rgba(0, 0, 0, 0.0);
+border-radius: 50px;
+padding: 15px 15px 15px 15px;
+
+}
+
+
+
+#listfiltre a
+{
+
+text-decoration: none;
+color: black;
+font-weight: bold;
+background-color: white;
+}
+
+
+#infosup
+{
+position: relative;
+left: 40px;
+}
+
+
+
+#info
+{
+
+color: #0065FC ;
+border: 1px solid rgba(242, 242, 242, 1.0);
+border-radius: 500px;
+padding: 3px 7px 3px 7px;
+background-color: white;
+
+}
+
+#plusde500
+{
+
+color: grey;
+
+}
 
 
 
 }
 
 
-* {box-sizing: content-box;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* réalisation sur tous type de page, avec minimum 768 px et maximum 992px (réalisation sur tablette) */
+
+@media screen and (min-width:  768px) and (max-width: 992px)
+{
+
+header 
+{
+
+display: flex;
+justify-content: space-between;
+
+
+}
+
+header ul
+
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#Logo
+{
+
+	padding-left: 30px;
+	padding-top: 10px;
+
+}
+
+
+header ul li
+{
+	text-decoration-style: none;
+	margin: 21px 20px 30px 20px;
+
+}
+
+header ul li a 
+
+{
+
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 43px;
+
+}
+
+header ul li a:hover
+
+{
+
+border-top: solid blue ;
+color: blue;
+
+
+}
+/* réalisation du navigateur de recherche */
+
+section h1
+{
+
+ font-size: 26px;
+ font-weight: bold;
+}
+
+
+section h2
+
+{
+
+font-size: 20px;
+color: grey;
+}
+
+
+
+#logolocation
+{
+	
+	position: relative;
+	background-color: #F2F2F2;
+	border: 3px rgba(0, 0, 0, 1.0) ;
+	border-radius: 10px;
+	padding: 10px 20px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	z-index: 20;
+	left: 10px;
+
+
+}
+
+#zonerecherche
+{
+
+position: relative;
+left: 20px;
+
+}
+
+
+
+
+
+
+#rechercherbleu
+{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	background-color: #0065FC;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	padding: 10px 10px 10px 20px;
+	right: 25px;
+	z-index: 20;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+#rechercherbleu:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: #0075Fb;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	z-index: 20;
+	font-weight: bold;
+}
+
+
+section form input
+{
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	padding: 12px 15px 10px 10px;
+	border: rgba(0, 0, 0, 0.0);
+	z-index: 100;
+	visibility: visible;
+	font-weight: bold;
+
+}
+}
+
+
+/* Réalisation sur tous type de page avec maximum de 768px (réalisation sur Tél) */
+
+@media screen and (max-width: 768px)
+{
+
+header 
+{
+
+display: flex;
+flex-direction: column;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+overflow: visible;
+
+}
+
+header ul
+
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+    justify-content: ;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	flex-wrap: nowrap;
+
+
+}
+
+#Logo
+{
+display: flex;
+justify-content: center;
+padding-left: 15%;
+
+}
+
+
+header ul li
+{
+	text-decoration-style: none;
+	margin: 0px 0px 0px 0px;
+
+
+}
+
+#hebergement
+{
+	position: absolute;
+	text-decoration: none;
+	color: black;
+
+	margin: 10px 0px 0px 0px;
+	border-bottom: solid grey ;
+
+	max-width: 80%;
+	padding: 10px 20% 20px 20%;
+	left: 0px;
+}
+
+#activité
+
+
+{
+	position: absolute;
+	text-decoration: none;
+	color: black;
+
+	margin: 10px 0px 0px 0px;
+	border-bottom: solid grey ;
+
+	max-width: 80%;
+	padding: 10px 20% 20px 20%;
+	right: 0px;
+}
+
+#activité:hover , #hebergement:hover
+
+{
+
+border-bottom: solid blue ;
+color: blue;
+padding-left:  ;
+padding-right: ;
+}
+
+
+/* réalisation du navigateur de recherche */
+
+#premiersec
+{
+position: relative;
+top: 70px;
+
+
+}
+
+section h1
+{
+
+ font-size: 26px;
+ font-weight: bold;
+}
+
+
+section h2
+
+{
+
+font-size: 20px;
+color: grey;
+}
+
+
+
+#logolocation
+{
+	
+	position: relative;
+	background-color: #F2F2F2;
+	border: 3px rgba(0, 0, 0, 1.0) ;
+	border-radius: 10px;
+	padding: 15px 20px 15px 15px;
+	margin: 0px 0px 0px 0px;
+	z-index: 20;
+	left: 10px;
+
+
+}
+
+#zonerecherche
+{
+
+position: relative;
+left: 90px;
+top: 20px;
+}
+
+
+
+
+
+
+#rechercherbleu:hover
+{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	background-color: #0065FC;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	padding: 10px 10px 10px 20px;
+	right: 25px;
+	z-index: 20;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+#rechercherbleu
+{
+	visibility: hidden;
+	text-decoration: none;
+	color: white;
+	background-color: #0075Fb;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	z-index: 20;
+	font-weight: bold;
+}
+
+
+section form input
+{
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 15px;
+	border: 3px rgba(242, 242, 242, 1.0);
+	z-index: 100;
+	visibility: visible;
+	font-weight: bold;
+
+}
+
+#loupe
+{
+position: relative;
+right: 110px;
+background-color: #0075Fb;
+	border: 3px rgba(242, 242, 242, 0.0);
+	border-radius: 10px;
+	z-index: 200;
+	font-weight: bold;
+	padding: 15px 15px 15px 15px;
+color: white;
+
+}
+
+
+#espacefiltre
+{
+position: relative;
+top: 70px;
+left: 0px;
+display: flex;
+flex-direction: column;	
+
+}
+
+#listfiltre
+{
+
+display: flex;
+flex-direction: row;
+text-decoration: none;
+list-style-type: none;
+flex-wrap: wrap ;
+}
+
+#listfiltre ul
+{
+
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
+#listfiltre li
+{
+
+text-decoration: none;
+background-color: white;
+border: 1px solid rgba(242, 242, 242, 1.0);
+border-radius: 50px;
+padding: 0px 15px 0px 0px;
+margin: 0px 15px 0px 15px;
+
+}
+
+
+#économie, #Familial, #romantique, #Animaux
+{
+
+background-color: #DEEBFF;
+color: #0065FC;
+border: rgba(0, 0, 0, 0.0);
+border-radius: 50px;
+padding: 15px 15px 15px 15px;
+
+}
+
+
+
+#listfiltre a
+{
+
+text-decoration: none;
+color: black;
+font-weight: bold;
+background-color: white;
+}
+
+
+/*Nous allons réaliser mtn le petit info */
+
+#infosup
+{
+position: relative;
+top: 70px;
+left: 40px;
+}
+
+
+
+#info
+{
+
+color: #0065FC ;
+border: 1px solid rgba(242, 242, 242, 1.0);
+border-radius: 500px;
+padding: 3px 7px 3px 7px;
+background-color: white;
+
+}
+
+#plusde500
+{
+
+font-size: 20px;
+color: black;
+
+}
+
+/* hebergement à marseille */ 
+
+#hebergementmars
+{
+	color: white;
+	background-color:black ;
+
+}
+
+
+#cannebiere
+{
+
+	background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
